@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+    --azul-claro: #87CEEB;
+    --azul-escuro: rgba(70,130,180);
+}
+
+body{
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    overflow: auto;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    height: 85px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-claro);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+/* >>>>> PRODUTOS <<<<< */
+
+.lista-produtos{margin: 25px;}
+.lista-produtos h2{margin: 12px;}
+
+.image-card{
+    margin: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+}
+
+.card-produto{
+    flex:0 2 15% ;
+    background-color: var(--azul-escuro);
+    border-radius: 12px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.produtos-cadastrados{
+    display: flex;
+    padding: 12px;
+    margin: 12px;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.trash{cursor: pointer;}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    align-content: end;
+}
+
+.conteiner-produto *{margin-left: 5px;}
+
+.conteiner-produto{
+    margin: 3px;
+    background-color: var(--azul-escuro) ;
+    border-radius: 12px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.conteudo-produto{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 50px;
+}
+
+.conteiner-descricao{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 15px;
+}
+
+.remover-item img{
+    width: 15px;
+    cursor: pointer ;
+}
+
+
+/* >>>>> FORMULARIO <<<<< */
+
+.add-produtos{
+    margin: 25px;
+    border: 2px bolder ;
+}
+.add-produtos h2 {margin: 12px;}
+
+.conteiner-formulario{
+    padding: 12px;
+    margin: 12px;
+}
+
+.campo-formulario{margin: 25px;}
+
+.compo-escrita{
+    width: 50vw;
+    border-radius: 24px;
+    color: black;
+    padding: 1em;
+    border: 1.5px solid var(--azul-claro);
+}
+
+.botao-formulario{
+    margin: 15px;
+    width: 55px;
+    border-radius: 12px;
+    border: 0.6px solid var(--azul-claro);
+    cursor: pointer;
+}
+
+.botao-formulario:hover{
+    background-color: black;
+    color: var(--azul-claro);
+}
+
+footer{
+    width: 100%;
+    background-color: var(--azul-claro);
+    font-size: 12px;
+    padding: 5px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width:887px){
+
+    main{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction:column-reverse;
+    }
+    .card-produto{
+        flex:0 2 30% ;
+        background-color: var(--azul-escuro);
+        border-radius: 12px;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+    .conteiner-formulario{
+        padding: 12px;
+        margin: 12px;
+        font-size: larger;
+    }
+}

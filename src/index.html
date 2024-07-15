@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/add_product.css">
+    <title>Commerce A. S. C</title>
+</head>
+
+<body>
+    <header>
+        <div class="my-header">
+            <h3>Meu e-commerce de livros</h3>
+        </div>
+    </header>
+    <main>
+        <section class="lista-produtos">
+            <h2>My Products</h2>
+            <div class="produtos-cadastrados" id="product-list" data-lista>
+                <!-- os produtos entram aqui por meio do js -->
+            </div>
+        </section>
+
+        <section class="add-produtos">
+            <h2>Add a new product</h2>
+            <form class="conteiner-formulario" action="" data-formulario>
+                <div class="campo-formulario">
+                    <input class="campo-escrita" type="text" placeholder="product name" data-nome>
+                    <span class="mensagem-erro"></span>
+                </div>
+                <div class="campo-formulario">
+                    <input class="campo-escrita" type="text" placeholder="value/ex: 10,00" data-valor>
+                    <span class="mensagem-erro"></span>
+                </div>
+                <div class="campo-formulario">
+                    <input class="campo-escrita" type="url" placeholder="image url" data-url>
+                    <span class="mensagem-erro"></span>
+                </div>
+                <button type="submit" class="botao-formulario botao-add">add</button>
+                <button type="reset" class="botao-formulario botao-clear">clear</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <span>© 2024 ALESSANDRA SOUSA. Direitos reservados ao autor.</span>
+    </footer>
+
+    <script src="./script/listarProdutos.js" type="module"></script>
+    <script src="./script/conection.js" type="module"></script>
+    <script src="./script/adicionarProduto.js" type="module"></script>
+    <script src="./script/excluirProduto.js" type="module"></script>
+</body>
+</html>
